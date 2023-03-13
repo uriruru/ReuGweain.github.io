@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styling.Css">
+    <link rel="stylesheet" href="Functions.js">
+
+    <!--Background particles-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!--Navivatin bar -->
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- Include Slick JS file -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!--Jquery tong nasa baba para sa Smooth Scroll-->
+
+
+
+    <title>Gweain/ReuJames</title>
+
+</head>
+
+<body>
+    <!--Start of coding-->
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#landingsection">
+                <p
+                    style="background-color: #000000; color: #11f7ff; font-size: 23px; border-radius: 2px; padding: 5px 10px; border: 1px rgb(0, 247, 255) solid;">
+                    GWEAIN</p>
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#aboutsection">
+                    About
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="#dlr">
+                            Download Resume
+                        </a>
+                        <a class="navbar-item" href="#portdlres">
+                            Portfolio (MyWorks)
+                        </a>
+                        <a class="navbar-item" href="#aboutsection">
+                            My Skills
+                        </a>
+                        <a class="navbar-item" href="#VS">
+                            Visual Showcase
+                        </a>
+                        <a class="navbar-item" href="#PP">
+                            Personal Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button"
+                                style=" border: 0; background-color: rgb(73, 207, 207); color: rgb(0, 0, 0);"
+                                target="_blank" href="https://www.facebook.com/reu.acuesta">
+                                <span>
+                                    CONTACT
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Get all the navbar-burger elements
+        const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event listener to each of them
+        navbarBurgers.forEach(function (el) {
+            el.addEventListener('click', function () {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    </script>
+
+
+    <section id="landingsection" class="hero is-primary is-medium" style="color: white; position: relative;">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+
+        <div class="hero-body">
+            <div class="container has-text-left">
+
+                <p class="title" style=" font-family: Bebas Neue; 
+        font-size: clamp(20px, 14vw, 120px); line-height: 85%; ">
+                    <span>Hello MY NAME IS</span>
+                    <br><span style="color: rgb(214, 83, 83);">REU JAMES</span>
+                    <br><span style="color: rgb(26, 221, 221);">I build things for the web.</span>
+                </p>
+
+                <p style="font-size: 22px; line-height: 30px;">I'm a <strong>Front-End Web
+                        Developer</strong>.</p>
+                <p style="font-size: 17px;">23-year-old Front-End Web Developer,
+                    Aerial Drone Videographer, Fingerstyle Guitarist,
+                    YT Content Creator based in Calabarzon, Philippines.</p>
+
+                <div style="font-size: 40px;">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-python"></i>
+
+                </div>
+
+                <br>
+
+
+                <a href="#portdlres">
+                    <button class="shadow__btn">
+                        EXPLORE
+                    </button>
+                </a>
+
+
+                <!--IMG-->
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <script>
+            particlesJS('particles-js',
+
+                {
+                    "particles": {
+                        "number": {
+                            "value": 100,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ccbb46"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "img/github.svg",
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 1,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#21cde3",
+                            "opacity": 0.6,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 6,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": false,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": false,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true,
+                    "config_demo": {
+                        "hide_card": false,
+                        "background_color": "#b61924",
+                        "background_image": "",
+                        "background_position": "50% 50%",
+                        "background_repeat": "no-repeat",
+                        "background_size": "cover"
+                    }
+                }
+
+            );
+        </script>
+
+
+
+    </section>
+
+    <style>
+        .shadow__btn {
+            padding: 10px 25px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 30px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+        }
+
+        .shadow__btn {
+            background: rgb(39, 39, 39);
+        }
+
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(46, 208, 236),
+                0 0 25px rgb(0, 217, 255),
+                0 0 50px rgb(0, 255, 242),
+                0 0 100px rgb(0, 140, 255);
+        }
+
+        /* Socials CSS */
+
+        .card svg {
+            height: 25px;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e7e7e7;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            height: 50px;
+            width: 200px;
+        }
+
+        .card::before,
+        .card::after {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            transition: 0.25s linear;
+            z-index: 1;
+        }
+
+
+
+        .card:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .card:hover span {
+            opacity: 0;
+            z-index: -3;
+        }
+
+        .card:hover::before {
+            opacity: 0.5;
+            transform: translateY(-100%);
+        }
+
+        .card:hover::after {
+            opacity: 0.5;
+            transform: translateY(100%);
+        }
+
+        .card span {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: whitesmoke;
+            font-family: 'Fira Mono', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            opacity: 1;
+            transition: opacity 0.25s;
+            z-index: 2;
+        }
+
+        .card .social-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 100%;
+            color: whitesmoke;
+            font-size: 24px;
+            text-decoration: none;
+            transition: 0.25s;
+        }
+
+        .card .social-link:hover {
+            background-color: rgba(249, 244, 255, 0.774);
+            animation: bounce_613 0.4s linear;
+        }
+
+        @keyframes bounce_613 {
+            40% {
+                transform: scale(1.4);
+            }
+
+            60% {
+                transform: scale(0.8);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+
+    <section id="portdlres" class="hero is-primary" style="background-color: rgb(32, 32, 32);">
+
+        <br>
+        <br>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-left">
+                <p style="line-height: 30px; font-size: 45px; font-family: Bebas Neue" class="title">
+                    PORTFOLIO <span style="font-family: sans-serif; font-size: 20px; text-decoration-line: overline;">MY
+                        WORKS</span>
+                </p>
+                <p style="font-size: 19px; font-family: Arial, Helvetica, sans-serif;" class="subtitle">
+                    <span
+                        style="background-color: #404660; padding: 10px 10px; border-radius: 20px; box-sizing: border-box; display: inline-block;">
+                        My Codings & <span style="color: #5cd1ff;">Creations</span>: Unleashing the digital <span
+                            style="color: rgb(255, 131, 131);">Solutions</span>.
+                    </span>
+                </p>
+
+                <!--Drone Icon link-->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+                <br>
+
+                <!--Portfolio-->
+                <div class="tile is-ancestor">
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="#PP">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(88, 88, 88); ">
+                                <i style="color: white; font-size: 70px;" class="fas fa-code"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">CODING</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Front-End Web Development</p>
+                                <div class="content">
+                                    <p style="color: white;">Web Portfolio, Blog Website, Ecommerce, Personal Websites,
+                                        Simple Games And Apps</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="https://www.youtube.com/playlist?list=PLT1GOz9NUK8hJ5it2pz96mfdRXdnzmV8t">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(17, 143, 143); ">
+                                <i style="color: white; font-size: 70px;" class="fas fa-helicopter"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">Drone Piloting</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Aerial Photo & Videography</p>
+                                <div class="content">
+                                    <p style="color: white;">Real Estate Aerial Houses Village Tour, Aerial Drone
+                                        Photography And Videography</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="https://www.youtube.com/playlist?list=PLT1GOz9NUK8hadH2kmyteUiFkEGWG9xCZ">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(61, 74, 187); ">
+                                <i style="color: white; font-size: 70px;" class="fas fa-video"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">VIDEO EDITING</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Basic Knowledge & Experience</p>
+                                <div class="content">
+                                    <p style="color: white;">Tools: Adobe After Effects, Capcut Ios And Android Version
+                                        And
+                                        Filmora</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="https://www.youtube.com/playlist?list=PLT1GOz9NUK8iM-1_Rxi2g22a6Fb4QQ1Jr">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(107, 173, 62); ">
+                                <i style="color: white; font-size: 70px;" class="fas fa-home"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">Real Estate</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Sales Assistant</p>
+                                <div class="content">
+                                    <p style="color: white;">NO DP Houses, House Renovations, Village tour & Aerial Tour
+                                        +
+                                        House Inside Tour</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="https://www.youtube.com/playlist?list=PLT1GOz9NUK8jeko5gOO3x3nkqHG-LbEw5">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(202, 152, 77);">
+                                <i style="color: white; font-size: 70px;" class="fas fa-guitar"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">Acoustic Guitar</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Fingerstyle Guitarist</p>
+                                <div class="content">
+                                    <p style="color: white;">Acoustic Fingerstyle Covers & Acoustic Fingerstyle Guitar
+                                        Tutoria & Guitar TABS</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                    <div id="boxboxe" class="tile is-parent">
+
+                        <a href="https://www.youtube.com/channel/UCauGeX6bFfvi6Ei4gHXIdrw">
+                            <article id="boxboxe1" class="tile is-child box"
+                                style="box-shadow: none; background-color: rgb(223, 98, 98); ">
+                                <i style="color: white; font-size: 70px;" class="fab fa-youtube"></i>
+                                <br>
+                                <br>
+                                <p style="color: rgb(255, 255, 255);" class="title">Youtube Channel</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Content Creator</p>
+                                <div class="content">
+                                    <p style="color: white;">Unboxing Videos, Real Estate House tour, Guitar Tutorials &
+                                        many more</p>
+                                </div>
+                            </article>
+                        </a>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <p id="dlr">
+                    <span style="font-size: 18px; border-radius: 26px; padding: 9px 25px; 
+                    color: #ffffff; border: 1px rgb(182, 182, 182) solid;" class="underlineresume"><a
+                            href="/Reu James Resume 2023.pdf" download>Download Resume</a></span>
+                </p>
+
+                <br>
+                <br>
+                <br>
+
+                <p style="font-size: 45px; font-family: Bebas Neue; line-height: 40px;">Here are the <strong
+                        style="color: #33c7cc;">technologies</strong> I’ve been using recently:</p>
+
+                <div style="font-size: 45px; color: #e6b737;">
+                    <i id="techiconshover" class="fa-brands fa-html5"></i>
+                    <i id="techiconshover" class="fa-brands fa-css3-alt"></i>
+                    <i id="techiconshover" class="fa-brands fa-js"></i>
+                    <i id="techiconshover" class="fa-brands fa-github"></i>
+                    <i id="techiconshover" class="fa-brands fa-react"></i>
+                    <i id="techiconshover" class="fa-brands fa-vuejs"></i>
+                    <i id="techiconshover" class="fa-brands fa-java"></i>
+                    <i id="techiconshover" class="fa-brands fa-python"></i>
+                    <i id="techiconshover" class="fa-brands fa-wordpress"></i>
+                    <i id="techiconshover" class="fa-brands fa-figma"></i>
+                </div>
+
+                <style>
+                    #techiconshover {
+                        transition: 0.2s;
+                    }
+
+                    #techiconshover:hover {
+                        transition: 0.3s;
+                        color: #fffdfd;
+                        transform: translateY(-4px);
+                    }
+                </style>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <style>
+        .underlineresume:hover {
+            background-color: #3b3b3b;
+            transition: 0.1s ease;
+        }
+
+        #boxboxe {
+            transition: 0.3s;
+        }
+
+
+        #boxboxe:hover {
+            transition: 0.3s;
+            transform: translateY(-6px);
+        }
+
+        #boxboxe1 {
+            transition: 0.3s;
+            background-color: #ffffff;
+        }
+
+        #boxboxe1:hover {
+            transition: 0.5s;
+            background: linear-gradient(-45deg, #66b7bd, #6b59cf, #36c0b9, #4d86bb);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+
+
+        .continue-application {
+            --color: #fff;
+            --background: #404660;
+            --background-hover: #3A4059;
+            --background-left: #2B3044;
+            --folder: #F3E9CB;
+            --folder-inner: #BEB393;
+            --paper: #FFFFFF;
+            --paper-lines: #BBC1E1;
+            --paper-behind: #E1E6F9;
+            --pencil-cap: #fff;
+            --pencil-top: #275EFE;
+            --pencil-middle: #fff;
+            --pencil-bottom: #5C86FF;
+            --shadow: rgba(13, 15, 25, .2);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19px;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+            padding: 17px 29px 17px 69px;
+            transition: background 0.3s;
+            color: var(--color);
+            background: var(--bg, var(--background));
+        }
+
+        .continue-application>div {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 53px;
+            position: absolute;
+            overflow: hidden;
+            border-radius: 5px 0 0 5px;
+            background: var(--background-left);
+        }
+
+        .continue-application>div .folder {
+            width: 23px;
+            height: 27px;
+            position: absolute;
+            left: 15px;
+            top: 13px;
+        }
+
+        .continue-application>div .folder .top {
+            left: 0;
+            top: 0;
+            z-index: 2;
+            position: absolute;
+            transform: translateX(var(--fx, 0));
+            transition: transform 0.4s ease var(--fd, 0.3s);
+        }
+
+        .continue-application>div .folder .top svg {
+            width: 24px;
+            height: 27px;
+            display: block;
+            fill: var(--folder);
+            transform-origin: 0 50%;
+            transition: transform 0.3s ease var(--fds, 0.45s);
+            transform: perspective(120px) rotateY(var(--fr, 0deg));
+        }
+
+        .continue-application>div .folder:before,
+        .continue-application>div .folder:after,
+        .continue-application>div .folder .paper {
+            content: "";
+            position: absolute;
+            left: var(--l, 0);
+            top: var(--t, 0);
+            width: var(--w, 100%);
+            height: var(--h, 100%);
+            border-radius: 1px;
+            background: var(--b, var(--folder-inner));
+        }
+
+        .continue-application>div .folder:before {
+            box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+            transform: translateX(var(--fx, 0));
+            transition: transform 0.4s ease var(--fd, 0.3s);
+        }
+
+        .continue-application>div .folder:after,
+        .continue-application>div .folder .paper {
+            --l: 1px;
+            --t: 1px;
+            --w: 21px;
+            --h: 25px;
+            --b: var(--paper-behind);
+        }
+
+        .continue-application>div .folder:after {
+            transform: translate(var(--pbx, 0), var(--pby, 0));
+            transition: transform 0.4s ease var(--pbd, 0s);
+        }
+
+        .continue-application>div .folder .paper {
+            z-index: 1;
+            --b: var(--paper);
+        }
+
+        .continue-application>div .folder .paper:before,
+        .continue-application>div .folder .paper:after {
+            content: "";
+            width: var(--wp, 14px);
+            height: 2px;
+            border-radius: 1px;
+            transform: scaleY(0.5);
+            left: 3px;
+            top: var(--tp, 3px);
+            position: absolute;
+            background: var(--paper-lines);
+            box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+        }
+
+        .continue-application>div .folder .paper:after {
+            --tp: 6px;
+            --wp: 10px;
+        }
+
+        .continue-application>div .pencil {
+            height: 2px;
+            width: 3px;
+            border-radius: 1px 1px 0 0;
+            top: 8px;
+            left: 105%;
+            position: absolute;
+            z-index: 3;
+            transform-origin: 50% 19px;
+            background: var(--pencil-cap);
+            transform: translateX(var(--pex, 0)) rotate(35deg);
+            transition: transform 0.4s ease var(--pbd, 0s);
+        }
+
+        .continue-application>div .pencil:before,
+        .continue-application>div .pencil:after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+            width: var(--w, 5px);
+            height: var(--h, 20px);
+            border-radius: var(--br, 2px 2px 0 0);
+            top: var(--t, 2px);
+            left: var(--l, -1px);
+        }
+
+        .continue-application>div .pencil:before {
+            -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+            clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+        }
+
+        .continue-application>div .pencil:after {
+            --b: none;
+            --w: 3px;
+            --h: 6px;
+            --br: 0 2px 1px 0;
+            --t: 3px;
+            --l: 3px;
+            border-top: 1px solid var(--pencil-top);
+            border-right: 1px solid var(--pencil-top);
+        }
+
+        .continue-application:before,
+        .continue-application:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            border-radius: 1px;
+            background: var(--color);
+            transform-origin: 9px 1px;
+            transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+            top: 26px;
+            right: 16px;
+            transition: transform 0.3s;
+        }
+
+        .continue-application:after {
+            --r: 45deg;
+        }
+
+        .continue-application:hover {
+            --cx: 2px;
+            --bg: var(--background-hover);
+            --fx: -40px;
+            --fr: -60deg;
+            --fd: .15s;
+            --fds: 0s;
+            --pbx: 3px;
+            --pby: -3px;
+            --pbd: .15s;
+            --pex: -24px;
+        }
+    </style>
+
+    <!--About Me Section-->
+
+    <section id="aboutsection" class="hero is-link">
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <!--
+                <strong style="font-size: 40px; color: #b9b0e9;">ABOUT ME</strong> <br><br>
+                -->
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+
+                        <article class="tile is-child box"
+                            style="background-color: rgb(0, 0, 0); box-shadow: none; color: white;">
+
+                            <div class="content" style="text-align: left;">
+                                <strong>Get to Know Me</strong>
+                                <p>Hi there! I'm James Reu B. Acuesta, a passionate front-end Web developer with Almost
+                                    4 Years of experience in developing
+                                    responsive and user-friendly websites. I specialize in HTML, CSS, JS. My goal is to
+                                    create visually appealing and
+                                    intuitive websites that provide a seamless user experience. I'm always eager to
+                                    learn new skills and stay up-to-date with
+                                    the latest industry trends.</p>
+
+                                <div>
+                                    <span class="contbut"><a
+                                            href="https://www.facebook.com/reu.acuesta">CONTACT</a></span>
+                                </div>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+
+                    <div class="tile is-parent">
+                        <article class="tile is-child box"
+                            style="background-color: rgb(0, 0, 0); box-shadow: none; color: rgb(255, 255, 255);">
+
+                            <div class="content" style="text-align: left;">
+                                <strong>Technical Skills</strong>
+                                <p><Span class="techskillsborder">HTML5</Span>
+                                    <Span class="techskillsborder">CSS3</Span>
+                                    <Span class="techskillsborder">Javascript</Span>
+                                    <Span class="techskillsborder">Bulma</Span>
+                                    <Span class="techskillsborder">Bootstrap</Span>
+                                    <Span class="techskillsborder">W3CSS</Span>
+                                    <Span class="techskillsborder">JAVA</Span>
+                                    <Span class="techskillsborder">Python</Span>
+                                    <Span class="techskillsborder">Git</Span>
+                                    <Span class="techskillsborder">Github</Span>
+                                    <Span class="techskillsborder">ReactJs</Span>
+                                    <Span class="techskillsborder">WordPress</Span>
+                                    <Span class="techskillsborder">Jquery</Span>
+                                </p>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+
+
+                <div class="tile is-ancestor">
+
+                    <div class="tile is-parent">
+                        <article class="tile is-child box" style="background-color: #000000;">
+                            <div class="content" style="text-align: left; color: #ffffff;">
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">HARD SKILLS</p>
+
+                                <li>
+                                    <Span class="Hardtechskillsborder">Knowledge in HTML, CSS, JS, Python & Java.</Span>
+                                </li>
+
+                                <li>
+                                    <Span class="Hardtechskillsborder">Proficiency in responsive Web design</Span>
+                                </li>
+
+                                <li>
+                                    <Span class="Hardtechskillsborder">Basic Git & Github Knowledge</Span>
+                                </li>
+
+                                <li>
+                                    <span class="Hardtechskillsborder">Basic Knowledge in Wordpress, UI & UX
+                                        Design</span>
+                                </li>
+
+                                <li>
+                                    <span class="Hardtechskillsborder">Basic Bootstrap, W3CSS, Bulma, ReactJs &
+                                        VueJS</span>
+                                </li>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tile is-parent">
+                        <article class="tile is-child box" style="background-color: #000000;">
+                            <div class="content" style="text-align: left;">
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">SOFT SKILLS</p>
+
+                                <Span class="Softskillsborder">Teamwork</Span>
+
+                                <Span class="Softskillsborder">Adaptability</Span>
+
+                                <Span class="Softskillsborder">Patience</Span>
+
+                                <span class="Softskillsborder">Colaboration</span>
+
+                                <span class="Softskillsborder">Willingness to learn</span>
+
+                                <span class="Softskillsborder">Creativity</span>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tile is-parent">
+                        <article class="tile is-child box" style="background-color: #000000;">
+                            <div class="content" style="text-align: left;">
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">PERSONAL SKILLS</p>
+
+                                <span class="personalskillsborder">GUITAR</span>
+                                <span class="personalskillsborder">CODING</span>
+                                <span class="personalskillsborder">Editing</span>
+                                <span class="personalskillsborder">Drone</span>
+                                <span class="personalskillsborder">Videography</span>
+                                <span class="personalskillsborder">Designing</span>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Additional Content-->
+
+
+
+
+
+    <!--Video-->
+
+    <section id="VS" class="hero is-primary" style="background-color: rgb(228, 228, 228);">
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <strong style="font-size: 40px; color: #999999; line-height: 32px;">VISUAL SHOWCASE</strong>
+
+                <p class="subtitle">
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+
+                                <p style="color: black;" class="subtitle">
+                                    <video autoplay controls muted src="/Videos/CODING.mp4"></video>
+                                <p
+                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    CODING JOURNEY</p>
+                                </p>
+
+                            </article>
+                        </div>
+
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+
+                                <p style="color: black;" class="subtitle">
+                                    <video autoplay controls muted src="/Videos/Video Edits.mp4"></video>
+                                <p
+                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    VIDEO EDITS SAMPLE</p>
+                                </p>
+
+                            </article>
+                        </div>
+
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+
+                                <p style="color: black;" class="subtitle">
+                                    <video autoplay controls muted src="/Videos/Drone  Flight Test_1.mp4"></video>
+                                <p
+                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    DRONE PILOTING</p>
+                                </p>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    </p>
+
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+    <!--Carousel Slick slider body -->
+    <section id="PP" class="hero">
+
+        <div class="hero-body">
+            <div class="container">
+
+                <strong style="font-size: 40px; color: #818181; line-height: 32px;">PERSONAL PROJECTS</strong> <br><br>
+
+                <div class="columns is-desktop">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <a href=""><img src="/Images/ReuWebsite.png"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+                            <a href=""><img src="/Images/Soon.jpg" style="filter: invert();"></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Include jQuery and Slick JS -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+                <!-- Initialize the Slick JS carousel -->
+                <script>
+                    $(document).ready(function () {
+                        $('.carousel-slide').slick({
+                            infinite: true, // Loop the carousel
+                            speed: 250, // Set the speed of the carousel animation
+                            slidesToShow: 5, // Set the number of slides to show on desktop
+                            adaptiveHeight: true, // Set the height of the carousel to adapt to the current slide
+                            prevArrow: $('.carousel-prev'), // Add the previous button to the carousel
+                            nextArrow: $('.carousel-next'), // Add the next button to the carousel
+                            responsive: [
+                                {
+                                    breakpoint: 768, // breakpoint for mobile devices
+                                    settings: {
+                                        slidesToShow: 2 // Set the number of slides to show on mobile
+                                    }
+                                }
+                            ]
+                        });
+                    });
+                </script>
+
+                <!-- Apply CSS styles to the carousel -->
+                <style>
+                    .carousel-container {
+                        width: 100%;
+                        /* Set the width of the carousel to fill its container */
+                        margin: 0 auto;
+                        /* Center the carousel horizontally */
+                    }
+
+                    .carousel-slide {
+                        width: 100%;
+                        /* Set the width of the slides to fill the carousel */
+
+                    }
+
+                    .carousel-slide img {
+                        width: 98%;
+                        /* Set the width of the images to fill their container */
+                        margin-right: 10px;
+                        /* Add a margin of 10 pixels to the right of each image */
+                    }
+                </style>
+
+
+                <div class="container has-text-centered">
+                    <div class="carousel-nav">
+                        <button class="carousel-prev">Prev</button>
+                        <button class="carousel-next">Next</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+
+
+    <!--Socials-->
+    <section class="hero is-primary" style="background-color: #ffffff;">
+
+        <div class="hero-body">
+            <div class="container has-text-left">
+
+                <strong style="color: #747474; font-size: 40px; line-height: 32px;">Junior Front-End Web
+                    Developer</strong>
+                <P style="color: #3a3a3a;">My journey with Front End Development began with a curiosity
+                    for how websites were built. I started with basic HTML and CSS, and struggled to grasp
+                    some of the more complex concepts at first. However, I remained determined and continued
+                    to learn and experiment, gradually picking up new skills along the way. I was fortunate
+                    to have access to numerous online resources and mentors who helped me overcome obstacles
+                    and grow as a Front End Developer. With each project, I learned something new and became
+                    more confident in my ability to create websites that were both visually appealing and
+                    functional. While I still have much to learn, I am grateful for the progress I have made
+                    and am excited to continue improving my skills.</P>
+
+                <br>
+                <br>
+
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
+                    integrity="sha384-..." crossorigin="anonymous">
+
+
+                <strong style="color: #747474; font-size: 23px;">Follow Reu James on:</strong>
+                <br>
+                <div class="columns" style="color: #6d6c6c; font-size: 56px;">
+                    <div class="column" style="line-height: 100px;">
+                        <a href="https://www.facebook.com/reu.acuesta"><i id="iconiclast"
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/ReuJames"><i id="iconiclast" class="fa-brands fa-twitter"></i></a>
+                        <a href="https://steamcommunity.com/profiles/76561198426428254/"><i id="iconiclast"
+                                class="fa-brands fa-steam-symbol"></i></a>
+                        <a href="https://www.youtube.com/@Gweain7659"><i id="iconiclast"
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@ratcia1318"><i id="iconiclast"
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/fhomer21/"><i id="iconiclast"
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer style=" justify-content: center; padding: 30px; background-color: #000000; text-align: center;">
+        <p style="color: rgb(219, 219, 219);">Developed & Designed by <strong style="color: #ffffff;">Reu James</strong>
+            Using ( HTML5, CSS3, JS, Jquery & Bulma)</p>
+    </footer>
+
+
+
+    <!--End of coding-->
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</body>
+
+</html>
