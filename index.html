@@ -83,6 +83,14 @@
                         <p class="control">
 
                             <a class="bd-tw-button button"
+                                style=" border: 1px rgb(212, 212, 212) solid; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"
+                                target="_blank" href="#PP">
+                                <span>
+                                    WHAT'S NEW
+                                </span>
+                            </a>
+
+                            <a class="bd-tw-button button"
                                 style=" border: 0; background-color: rgb(73, 207, 207); color: rgb(0, 0, 0);"
                                 target="_blank" href="#forcontactto">
                                 <span>
@@ -128,9 +136,34 @@
 
                 <p class="title" style=" font-family: Bebas Neue; 
         font-size: clamp(20px, 13vw, 120px); line-height: 85%; ">
-                    <span style="color: white;">Hello MY NAME IS</span>
-                    <br><span style="color: rgb(214, 83, 83);">REU JAMES</span>
-                    <br><span style="color: rgb(26, 221, 221);">I build things for the web.</span>
+                    <span style="color: white;">
+                        <span class="helloreu1">H</span><span class="helloreu1">e</span><span
+                            class="helloreu1">l</span><span class="helloreu1">l</span><span class="helloreu1">o</span>
+                        <span class="helloreu1">M</span><span class="helloreu1">Y</span>
+                        <span class="helloreu1">N</span><span class="helloreu1">A</span><span
+                            class="helloreu1">M</span><span class="helloreu1">E</span>
+                        <span class="helloreu1">I</span><span class="helloreu1">S</span>
+                    </span>
+                    <br><span style="color: rgb(214, 83, 83);">
+                        <span class="helloreu2">R</span><span class="helloreu2">e</span><span class="helloreu2">u</span>
+                        <span class="helloreu2">j</span><span class="helloreu2">a</span><span
+                            class="helloreu2">m</span><span class="helloreu2">e</span><span class="helloreu2">s</span>
+
+                    </span>
+                    <br><span style="color: rgb(26, 221, 221);">
+                        <span class="lightext">I </span>
+                        <span class="lightext">b</span><span class="lightext">u</span><span
+                            class="lightext">i</span><span class="lightext">l</span><span class="lightext">d </span>
+                        <span class="lightext">t</span><span class="lightext">h</span><span
+                            class="lightext">i</span><span class="lightext">n</span><span class="lightext">g</span><span
+                            class="lightext">s </span>
+                        <span class="lightext">f</span><span class="lightext">o</span><span class="lightext">r </span>
+                        <span class="lightext">t</span><span class="lightext">h</span><span class="lightext">e </span>
+                        <span class="lightext">w</span><span class="lightext">e</span><span
+                            class="lightext">b</span><span class="lightext">.</span>
+
+                    </span>
+
                 </p>
 
                 <p style="font-size: clamp(17px, 13vw, 22px); line-height: 30px;">I'm a <strong>Front-End Web
@@ -140,7 +173,7 @@
                 </P>
                 </p>
 
-                <div style="font-size: 40px;">
+                <div style="font-size: 30px;">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-js"></i>
@@ -155,7 +188,10 @@
 
                 <a href="#portdlres">
                     <button class="shadow__btn">
-                        EXPLORE
+                        <span class="exptextclass">E</span><span class="exptextclass">X</span><span
+                            class="exptextclass">P</span><span class="exptextclass">L</span><span
+                            class="exptextclass">O</span><span class="exptextclass">R</span><span
+                            class="exptextclass">E</span>
                     </button>
                 </a>
 
@@ -325,7 +361,55 @@
                 0 0 100px rgb(0, 140, 255);
         }
 
-        /* Socials CSS */
+        .lightext {
+            transition: 0.2s ease;
+        }
+
+        .lightext:hover {
+            transition: 0.1s ease;
+            color: #11f7ff;
+            text-shadow: 0 0 5px rgb(46, 208, 236),
+                0 0 25px rgb(0, 217, 255),
+                0 0 50px rgb(0, 255, 242),
+                0 0 100px rgb(0, 140, 255);
+        }
+
+        /* Eto yung Hover duon sa explore text */
+        .exptextclass {
+            transition: 0.3s ease;
+        }
+
+        .exptextclass:hover {
+            transition: 0.1s ease;
+            color: #a1a1a1;
+        }
+
+        .helloreu1 {
+            transition: 0.2s ease;
+        }
+
+        .helloreu1:hover {
+            transition: 0.1s ease;
+            text-shadow: 0 0 5px rgb(255, 255, 255),
+                0 0 25px rgb(255, 255, 255),
+                0 0 50px rgb(255, 255, 255),
+                0 0 100px rgb(245, 237, 135);
+        }
+
+        .helloreu2 {
+            transition: 0.2s ease;
+        }
+
+        .helloreu2:hover {
+            color: rgb(255, 128, 128);
+            transition: 0.1s ease;
+            text-shadow: 0 0 5px rgb(243, 126, 31),
+                0 0 25px rgb(255, 118, 118),
+                0 0 50px rgb(197, 84, 84),
+                0 0 100px rgb(0, 0, 0);
+        }
+
+        /* Socials CSS helloreu1*/
 
         .card svg {
             height: 25px;
@@ -464,11 +548,12 @@
                                 <i style="color: white; font-size: 70px;" class="fas fa-code"></i>
                                 <br>
                                 <br>
-                                <p style="color: rgb(255, 255, 255);" class="title">CODING</p>
-                                <p style="color: rgb(255, 255, 255);" class="subtitle">Front-End Web Development</p>
+                                <p style="color: rgb(255, 255, 255);" class="title">Programming</p>
+                                <p style="color: rgb(255, 255, 255);" class="subtitle">Front-End / Back-End Development
+                                </p>
                                 <div class="content">
-                                    <p style="color: white;">Web Portfolio, Blog Website, Ecommerce, Personal Websites,
-                                        Simple Games And Apps</p>
+                                    <p style="color: white;">Web Portfolio, Ecommerce, Personal Websites,
+                                        Simple Games And Applications</p>
                                 </div>
                             </article>
                         </a>
@@ -876,8 +961,8 @@
                                     the latest industry trends.</p>
 
                                 <div>
-                                    <span class="contbut"><a href="https://www.facebook.com/reu.acuesta">Message
-                                            Me</a></span>
+                                    <span class="contbut"><a href="https://www.facebook.com/reu.acuesta">See
+                                            More</a></span>
                                 </div>
 
                             </div>
@@ -1005,7 +1090,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
 
-                <strong style="font-size: 40px; color: #999999; line-height: 32px;">VISUAL SHOWCASE</strong>
+                <strong style="font-size: 40px; color: #4d4c4c; line-height: 32px;">VISUAL SHOWCASE</strong>
 
                 <p class="subtitle">
 
@@ -1018,7 +1103,7 @@
                                 <p style="color: black;" class="subtitle">
                                     <video autoplay controls muted src="./Videos/CODING.mp4"></video>
                                 <p
-                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    style="background-color: #2e2e2e; color: #ffffff; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
                                     CODING JOURNEY</p>
                                 </p>
 
@@ -1031,7 +1116,7 @@
                                 <p style="color: black;" class="subtitle">
                                     <video autoplay controls muted src="./Videos/Video Edits.mp4"></video>
                                 <p
-                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    style="background-color: #2e2e2e; color: #ffffff; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
                                     VIDEO EDITS SAMPLE</p>
                                 </p>
 
@@ -1044,7 +1129,7 @@
                                 <p style="color: black;" class="subtitle">
                                     <video autoplay controls muted src="./Videos/Drone  Flight Test_1.mp4"></video>
                                 <p
-                                    style="background-color: #3fd4d4; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
+                                    style="background-color: #2e2e2e; color: #ffffff; border: 1px black solid; padding: 5px 5px; border-radius: 3px;">
                                     DRONE PILOTING</p>
                                 </p>
 
@@ -1064,12 +1149,14 @@
 
 
     <!--Carousel Slick slider body -->
-    <section id="PP" class="hero">
+    <!--Socials-->
+    <section class="hero is-primary" style="background-color: #ffffff;">
 
         <div class="hero-body">
-            <div class="container">
+            <div class="container has-text-left">
 
-                <strong style="font-size: 40px; color: #818181; line-height: 32px;">Personal Projects</strong> <br><br>
+                <strong id="PP" style="font-size: 40px; color: #6b6b6b; line-height: 32px;">Personal Projects</strong>
+                <br><br>
 
                 <div class="columns is-desktop">
                     <div class="carousel-container">
@@ -1117,7 +1204,7 @@
                 <!-- Apply CSS styles to the carousel -->
                 <style>
                     .carousel-container {
-                        width: 100%;
+                        width: 98%;
                         /* Set the width of the carousel to fill its container */
                         margin: 0 auto;
                         /* Center the carousel horizontally */
@@ -1137,29 +1224,21 @@
                     }
                 </style>
 
-
+                <!--
                 <div class="container has-text-centered">
                     <div class="carousel-nav">
                         <button class="carousel-prev">Prev</button>
                         <button class="carousel-next">Next</button>
                     </div>
                 </div>
+                -->
 
-
-            </div>
-
-    </section>
-
-
-    <!--Socials-->
-    <section class="hero is-primary" style="background-color: #ffffff;">
-
-        <div class="hero-body">
-            <div class="container has-text-left">
+                <br>
+                <br>
 
                 <strong style="color: #747474; font-size: 40px; line-height: 32px;">Junior Front-End Web
                     Developer</strong>
-                <P style="color: #3a3a3a;">My journey with Front End Development began with a curiosity
+                <P style="color: #3a3a3a; padding: 10px;">My journey with Front End Development began with a curiosity
                     for how websites were built. I started with basic HTML and CSS, and struggled to grasp
                     some of the more complex concepts at first. However, I remained determined and continued
                     to learn and experiment, gradually picking up new skills along the way. I was fortunate
@@ -1202,8 +1281,17 @@
 
     <!-- Footer -->
 
-    <footer style=" justify-content: center; padding: 30px; background-color: #000000; text-align: center;">
-        <p style="color: rgb(219, 219, 219);">Designed & Built by <strong style="color: #ffffff;">Reu James</strong> Using Html5, Css3, Javascript, Jquery & CSSBulma</p>
+    <footer style=" justify-content: center; padding: 30px; background-color: #292929; text-align: center;">
+        <p style="color: rgb(219, 219, 219);">Designed & Built by <strong style="transition: 0.2s; color: #32d1c9;"><span class="nameend">REU JAMES</span></strong>
+            Using Html, CSS, Javascript, Jquery & Bulma</p>
+
+        <style>
+            .nameend:hover {
+                transition: 0.1s;
+                color: #00ffea;
+            }
+        </style>
+
     </footer>
 
 
